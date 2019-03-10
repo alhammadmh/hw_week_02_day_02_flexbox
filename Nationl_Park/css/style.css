@@ -2,29 +2,51 @@
 /* header & nav */
 
 header {
-
+  display: flex;
 }
 
-header .logo, header nav {
+.logo {
+  flex: 2;
+  margin: auto;
+}
 
+.navigation{
+  flex: 1;
+  justify-content: space-evenly;
 }
 
 
 .container .aboutrow {
-
+display: flex;
+flex:1;
 }
 
 
 /* feature */
 
 .feature {
-
+display: flex;
+justify-content: flex-start;
 }
+
+.feat-right{
+  flex: 1;
+}
+.feat-left{
+  flex: 1;
+}
+
+
+/* .hero-cont .hero{
+  flex:1;
+} */
+
 
 /* cta */
 
 .cta .container {
-
+display: flex;
+flex:1;
 }
 
 
@@ -45,6 +67,8 @@ footer {
 .footer-right {
 
 }
+
+
 
 /* ======+++++======++++=====+++=== */
 /* ======+++++======++++=====+++=== */
@@ -77,6 +101,7 @@ header {
 
 nav ul li {
   padding: 15px;
+  float: right;
 }
 
 .navigation a {
@@ -87,6 +112,8 @@ nav ul li {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 0.8em;
+  
+
 }
 
 .navigation li:hover a {
@@ -125,10 +152,11 @@ nav ul li {
   display: block;
   color: #167C80;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px 15px;
   text-decoration:none;
   transition: all 0.2s;
+ 
 }
 
 .aboutbtn:hover, .contactbtn:hover {
@@ -255,7 +283,7 @@ footer h5 {
   font-size: 1.5em;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 900px) {
   body {
     font-size: 16px;
   }
